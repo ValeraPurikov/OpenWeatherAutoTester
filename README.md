@@ -8,6 +8,7 @@ Java SDK 13 <br/>
 JUnit 5 (Jupiter) <br/>
 Rest Assured <br/>
 Maven <br/>
+JSON <br/>
 
 ## Installation
 
