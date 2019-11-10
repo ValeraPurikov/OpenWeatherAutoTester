@@ -32,13 +32,7 @@ public class WeatherByZipHasResponseCode200 {
     }
     private static ArrayList<Integer> currentWeatherByZip(){
         ArrayList<Integer> returnList = new ArrayList<>();
-        returnList.add(15100);
-        returnList.add(14100);
-        returnList.add(13000);
-        returnList.add(11111);
-        returnList.add(10000);
         returnList.add(17123);
-        returnList.add(18262);
         returnList.add(11233);
         return returnList;
     }
