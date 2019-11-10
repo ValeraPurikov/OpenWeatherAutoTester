@@ -2,38 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd997204-a6f8-42e5-b45e-944af34441c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20190722.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_20190722.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/json_20190722.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_20190722.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeatherAPIAutoTester.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherAPIAutoTester.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/WeatherAPIAutoTester_jar/WeatherAPIAutoTester.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WeatherAPIAutoTester_jar/WeatherAPIAutoTester.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByZipHasResponseCode200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByZipHasResponseCode200.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/WeatherAPIAutoTester.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByCoordsHasResponseCode200.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByCoordsHasResponseCode200.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByIDHasCorrectCoords.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByIDHasCorrectCoords.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByIDHasCorrectCountry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByIDHasCorrectCountry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByIDHasCorrectName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByIDHasCorrectName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByIDHasCorrectTimeZone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByIDHasCorrectTimeZone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByIDHasResponseCode200.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByIDHasResponseCode200.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByNameHasCorrectCoords.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByNameHasCorrectCoords.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByNameHasCorrectCountry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByNameHasCorrectCountry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByNameHasCorrectID.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByNameHasCorrectID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByNameHasCorrectTimeZone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByNameHasCorrectTimeZone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByNameHasResponseCode200.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByNameHasResponseCode200.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByZipHasResponseCode200.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/JUnitTests/WeatherByZipHasResponseCode200.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/OpenWeather/OpenWeatherMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenWeather/OpenWeatherMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/TestHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/TestHandler$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/TestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/TestHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/TextAreaOutputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/TextAreaOutputStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/UI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/UI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/UI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/UI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/UI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/UI$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/UI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/UI$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/autoTesterSystem/UI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/WeatherAPIAutoTester.kotlin_module" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +43,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/json-20190722.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -205,6 +177,7 @@
       <workItem from="1573392955212" duration="139000" />
       <workItem from="1573394168794" duration="624000" />
       <workItem from="1573394872041" duration="211000" />
+      <workItem from="1573395565945" duration="802000" />
     </task>
     <servers />
   </component>
