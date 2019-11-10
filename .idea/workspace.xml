@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd997204-a6f8-42e5-b45e-944af34441c9" name="Default Changelist" comment="" />
+    <list default="true" id="bd997204-a6f8-42e5-b45e-944af34441c9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WeatherAPIAutoTester_jar/WeatherAPIAutoTester.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WeatherAPIAutoTester_jar/WeatherAPIAutoTester.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByCoordsHasResponseCode200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByCoordsHasResponseCode200.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectCoords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectCoords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectCountry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectCountry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectTimeZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectTimeZone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasResponseCode200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasResponseCode200.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectCoords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectCoords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectCountry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectCountry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectTimeZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectTimeZone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasResponseCode200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasResponseCode200.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByZipHasResponseCode200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByZipHasResponseCode200.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenWeather/OpenWeatherMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenWeather/OpenWeatherMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autoTesterSystem/TestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autoTesterSystem/TestHandler.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,17 +112,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CurrentWeatherByIDHasResponseCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WeatherByCoordsHasResponseCode200.currentWeatherByCoords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WeatherAPIAutoTester" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.OpenWeatherTests.*" />
+          <option name="PATTERN" value="com.JUnitTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.OpenWeatherTests" />
-      <option name="MAIN_CLASS_NAME" value="com.OpenWeatherTests.CurrentWeatherByIDHasResponseCode" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.JUnitTests" />
+      <option name="MAIN_CLASS_NAME" value="com.JUnitTests.WeatherByCoordsHasResponseCode200" />
+      <option name="METHOD_NAME" value="currentWeatherByCoords(int,int)" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,10 +163,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.UI" />
+        <item itemvalue="JUnit.WeatherByCoordsHasResponseCode200.currentWeatherByCoords" />
         <item itemvalue="JUnit.All in WeatherAPIAutoTester" />
         <item itemvalue="JUnit.WeatherByIDHasResponseCode200.currentWeatherByID" />
         <item itemvalue="JUnit.WeatherByNameHasResponseCode200.currentWeatherByName" />
-        <item itemvalue="JUnit.CurrentWeatherByIDHasResponseCode" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +183,8 @@
       <workItem from="1572772105682" duration="13223000" />
       <workItem from="1572893850366" duration="6154000" />
       <workItem from="1573306011395" duration="34694000" />
-      <workItem from="1573346537825" duration="959000" />
+      <workItem from="1573346537825" duration="1314000" />
+      <workItem from="1573383955025" duration="3436000" />
     </task>
     <servers />
   </component>
@@ -177,7 +196,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

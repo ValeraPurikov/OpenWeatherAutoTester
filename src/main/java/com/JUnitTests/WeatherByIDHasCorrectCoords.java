@@ -1,7 +1,7 @@
 package com.JUnitTests;
 import com.OpenWeather.OpenWeatherMethods;
 import org.json.JSONObject;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -11,11 +11,23 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class WeatherByIDHasCorrectCoords {
+
+    static OpenWeatherMethods weatherMethods;
+    static TestInfo testInfo;
+
+    @BeforeAll
+    static void init(TestInfo info){
+        testInfo = info;
+        weatherMethods = new OpenWeatherMethods();
+        System.out.println("Running Test: "+ testInfo.getDisplayName());
+    }
+
     @ParameterizedTest
     @MethodSource
+    @DisplayName("Weather By ID Has Correct Coords")
     void currentWeatherByID(double expectedLon, double expectedLat, int input) {
-        JSONObject response = new JSONObject(OpenWeatherMethods.currentWeatherByID(input).getBody().asString());
-        System.out.println("Weather By ID Has Correct Coords: Testing ID: " + input);
+        JSONObject response = new JSONObject(weatherMethods.currentWeatherByID(input).getBody().asString());
+        System.out.println("Testing ID: " + input);
         assertTrue(response.has("coord"), "Response has no coords!");
         JSONObject temp = response.getJSONObject("coord");
         assertEquals(input, response.get("id"), "For ID: " + input);

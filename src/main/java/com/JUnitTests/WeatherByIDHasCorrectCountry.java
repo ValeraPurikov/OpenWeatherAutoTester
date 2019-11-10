@@ -2,7 +2,7 @@ package com.JUnitTests;
 
 import com.OpenWeather.OpenWeatherMethods;
 import org.json.JSONObject;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -12,12 +12,22 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class WeatherByIDHasCorrectCountry {
+    static OpenWeatherMethods weatherMethods;
+    static TestInfo testInfo;
+
+    @BeforeAll
+    static void init(TestInfo info){
+        testInfo = info;
+        weatherMethods = new OpenWeatherMethods();
+        System.out.println("Running Test: "+ testInfo.getDisplayName());
+    }
 
     @ParameterizedTest
     @MethodSource
+    @DisplayName("Weather By ID Has Correct Country")
     void currentWeatherByID(String expected,int input) {
-        JSONObject response = new JSONObject(OpenWeatherMethods.currentWeatherByID(input).getBody().asString());
-        System.out.println("Weather By ID Has Correct Country: Testing ID: "+ input);
+        JSONObject response = new JSONObject(weatherMethods.currentWeatherByID(input).getBody().asString());
+        System.out.println("Testing ID: "+ input);
         assertTrue(response.has("sys"), "Response has no sys key!");
         JSONObject temp = response.getJSONObject("sys");
         assertTrue(temp.has("country"), "Response has no country key!");

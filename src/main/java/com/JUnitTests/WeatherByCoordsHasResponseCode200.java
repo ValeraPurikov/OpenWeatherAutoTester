@@ -2,7 +2,7 @@ package com.JUnitTests;
 
 import com.OpenWeather.OpenWeatherMethods;
 import org.json.JSONObject;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -14,11 +14,22 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class WeatherByCoordsHasResponseCode200 {
 
+    static OpenWeatherMethods weatherMethods;
+    static TestInfo testInfo;
+
+    @BeforeAll
+    static void init(TestInfo info){
+        testInfo = info;
+        weatherMethods = new OpenWeatherMethods();
+        System.out.println("Running Test: "+ testInfo.getDisplayName());
+    }
+
     @ParameterizedTest
     @MethodSource
+    @DisplayName("Weather By Coords Has Response Code 200")
     void currentWeatherByCoords(int lon, int lat) {
-        JSONObject response = new JSONObject(OpenWeatherMethods.currentWeatherByCoords(lon,lat).getBody().asString());
-        System.out.println("Weather By Coords Has Response Code 200: Testing Coords: "+ lon+":"+lat);
+        JSONObject response = new JSONObject(weatherMethods.currentWeatherByCoords(lon,lat).getBody().asString());
+        System.out.println("Testing Coords: "+ lon+":"+lat);
         assertTrue(response.has("coord"), "Response Has No Coords!");
         JSONObject temp = response.getJSONObject("coord");
         assertEquals(lon,response.getJSONObject("coord").get("lon"),"For Cords: "+ lon+":"+lat);

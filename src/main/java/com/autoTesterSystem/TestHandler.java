@@ -59,10 +59,13 @@ public class TestHandler {
                         System.out.println(f.getException().toString().replace("org.opentest4j.AssertionFailedError: ", ""));
                     }
                 }
+                System.out.println();
             }
             //Print the output digest
+            System.out.println();
             System.out.println("Tests Passed: "+successCount+"/"+list.getModel().getSize());
             System.out.println("Tests Failed: "+failureCount+"/"+list.getModel().getSize());
+            System.out.println();
             if (!failures.isEmpty()){
                 System.out.print("Tests Failed: ");
                 for (int i = 0 ; i < failures.size(); i++){
