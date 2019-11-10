@@ -4,10 +4,10 @@ This is a JAVA Maven Project. It contains a small suite of tests written using J
 
 ## Dependencies
 
-Java SDK 13
-JUnit 5 (Jupiter)
-Rest Assured
-Maven
+Java SDK 13 <br/>
+JUnit 5 (Jupiter) <br/>
+Rest Assured <br/>
+Maven <br/>
 
 ## Installation
 
