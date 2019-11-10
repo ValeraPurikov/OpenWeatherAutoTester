@@ -8,5 +8,4 @@ Simply download/clone the project and open it with a Java IDE, preferably Intell
 
 ## Usage
 
-In order to launch a test, click on the desired test from the left list, titled "Available Tests", in order to move it to the right list, titled "Assigned Tests", then press the "Start Tests" button. Multiple tests can be assigned this way, before being launched.
-The console bellow will contain all the output of the program.
+In order to launch a test from the UI, click on the desired test from the list on the left, titled "Available Tests", in order to move it to the list on the right, titled "Assigned Tests", then press the "Start Tests" button. Multiple tests can be assigned this way, before being launched. Test execution can be stopped by pressing Stop Tests button, which appears when tests are being executed. The console bellow will contain all the output of the program, including a report about the running tests.
