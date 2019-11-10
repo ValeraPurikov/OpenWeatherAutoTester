@@ -42,7 +42,6 @@ public class WeatherByIDHasCorrectName {
                 Arguments.of(524901, "Moscow"),
                 Arguments.of(6539761, "Rome"),
                 Arguments.of(6539761, "Marino")
-
         );
     }
 }

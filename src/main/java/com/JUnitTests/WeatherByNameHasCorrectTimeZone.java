@@ -42,7 +42,6 @@ public class WeatherByNameHasCorrectTimeZone {
                 Arguments.of(10800, "Moscow"),
                 Arguments.of(3600, "Rome"),
                 Arguments.of(3600, "Marino")
-
         );
     }
 }

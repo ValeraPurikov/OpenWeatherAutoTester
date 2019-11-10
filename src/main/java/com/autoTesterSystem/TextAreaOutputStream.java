@@ -29,7 +29,6 @@ public class TextAreaOutputStream extends OutputStream { // This class makes it 
         //When System.out.print is called, for each char in the string to be printed, this method is called
         if (b == '\r')
             return;
-
         //When message ends with \n, it means the message has been completed and we need to add it to UI console
         //Alternatively, this code is executed, when text line is too long and we need to break it when the current
         //char is a space
@@ -42,7 +41,6 @@ public class TextAreaOutputStream extends OutputStream { // This class makes it 
         }
         //Add the char to the text line
         sb.append((char) b);
-
         //If line is too long, we must break line when next space char arrives
         if (sb.length() >= 90) {
             waitForSpace = true;

@@ -62,8 +62,6 @@ public class TestHandler {
                 }
                 System.out.println();
             }
-
-
         } catch (IllegalArgumentException | ClassNotFoundException | InstantiationException | InvocationTargetException
                 | NoSuchMethodException | IllegalAccessException e) {
             e.printStackTrace();
@@ -87,7 +85,6 @@ public class TestHandler {
                     }
                 };
         Class c = tmp.loadClass(tempName);
-
         return c.getDeclaredConstructor().newInstance().getClass();
     }
 
