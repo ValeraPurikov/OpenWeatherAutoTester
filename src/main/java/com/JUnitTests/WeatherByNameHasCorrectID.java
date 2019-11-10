@@ -7,32 +7,31 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import java.util.ArrayList;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class WeatherByNameHasCorrectID {
     static OpenWeatherMethods weatherMethods;
-    static TestInfo testInfo;
 
     @BeforeAll
-    static void init(TestInfo info){
-        testInfo = info;
+    static void init(TestInfo info) {
+        //Arrange
         weatherMethods = new OpenWeatherMethods();
-        System.out.println("Running Test: "+ testInfo.getDisplayName());
     }
 
     @ParameterizedTest
     @MethodSource
     @DisplayName("Weather By Name Has Correct ID")
-    void currentWeatherByName(String input,int expected) {
+    void currentWeatherByName(String input, int expected) {
+        //Act
         JSONObject response = new JSONObject(weatherMethods.currentWeatherByName(input).getBody().asString());
-        System.out.println("Testing City: "+ input);
-        assertEquals(input,response.get("name"),"For City: "+input);
-        assertEquals(expected,response.get("id"),"For City: "+input);
+        //Assert
+        assertEquals(input, response.get("name"), "For City: " + input);
+        assertEquals(expected, response.get("id"), "For City: " + input);
     }
-    private static Stream<Arguments> currentWeatherByName(){
+
+    private static Stream<Arguments> currentWeatherByName() {
         return Stream.of(
                 Arguments.of("Vilnius", 593116),
                 Arguments.of("Warsaw", 756135),

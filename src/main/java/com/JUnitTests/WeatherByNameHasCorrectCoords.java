@@ -13,26 +13,24 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class WeatherByNameHasCorrectCoords {
     static OpenWeatherMethods weatherMethods;
-    static TestInfo testInfo;
 
     @BeforeAll
-    static void init(TestInfo info){
-        testInfo = info;
+    static void init(TestInfo info) {
+        //Arrange
         weatherMethods = new OpenWeatherMethods();
-        System.out.println("Running Test: "+ testInfo.getDisplayName());
     }
 
     @ParameterizedTest
     @MethodSource
     @DisplayName("Weather By Name Has Correct Coords")
     void currentWeatherByName(double expectedLon, double expectedLat, String input) {
+        //Act
         JSONObject response = new JSONObject(weatherMethods.currentWeatherByName(input).getBody().asString());
-        System.out.println("Testing City: " + input);
+        //Assert
         assertTrue(response.has("coord"), "Response has no coords!");
-        JSONObject temp = response.getJSONObject("coord");
         assertEquals(input, response.get("name"), "For City: " + input);
-        assertEquals(expectedLon, temp.get("lon"), "For City: " + input);
-        assertEquals(expectedLat, temp.get("lat"), "For City: " + input);
+        assertEquals(expectedLon, response.getJSONObject("coord").get("lon"), "For City: " + input);
+        assertEquals(expectedLat, response.getJSONObject("coord").get("lat"), "For City: " + input);
     }
 
     private static Stream<Arguments> currentWeatherByName() {
@@ -41,8 +39,8 @@ public class WeatherByNameHasCorrectCoords {
                 Arguments.of(21.01, 52.23, "Warsaw"),
                 Arguments.of(13.41, 52.52, "Berlin"),
                 Arguments.of(2.35, 48.85, "Paris"),
-                Arguments.of(-0.13,51.51, "London"),
-                Arguments.of(37.62,55.75, "Moscow"),
+                Arguments.of(-0.13, 51.51, "London"),
+                Arguments.of(37.62, 55.75, "Moscow"),
                 Arguments.of(12.64, 41.76, "Rome"),
                 Arguments.of(12.66, 41.76, "Marino")
         );

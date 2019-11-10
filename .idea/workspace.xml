@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd997204-a6f8-42e5-b45e-944af34441c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_20190722.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherAPIAutoTester.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherAPIAutoTester.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/WeatherAPIAutoTester_jar/WeatherAPIAutoTester.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WeatherAPIAutoTester_jar/WeatherAPIAutoTester.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByCoordsHasResponseCode200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByCoordsHasResponseCode200.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectCoords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectCoords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectCountry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectCountry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectTimeZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasCorrectTimeZone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasResponseCode200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByIDHasResponseCode200.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectCoords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectCoords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectCountry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectCountry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectTimeZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasCorrectTimeZone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasResponseCode200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByNameHasResponseCode200.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByZipHasResponseCode200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/JUnitTests/WeatherByZipHasResponseCode200.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autoTesterSystem/TestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autoTesterSystem/TestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autoTesterSystem/TextAreaOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autoTesterSystem/TextAreaOutputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autoTesterSystem/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autoTesterSystem/UI.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -178,6 +190,7 @@
       <workItem from="1573394168794" duration="624000" />
       <workItem from="1573394872041" duration="211000" />
       <workItem from="1573395565945" duration="802000" />
+      <workItem from="1573397906453" duration="5346000" />
     </task>
     <servers />
   </component>

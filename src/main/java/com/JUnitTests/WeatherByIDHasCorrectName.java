@@ -14,25 +14,25 @@ import static org.junit.jupiter.api.Assertions.*;
 public class WeatherByIDHasCorrectName {
 
     static OpenWeatherMethods weatherMethods;
-    static TestInfo testInfo;
 
     @BeforeAll
-    static void init(TestInfo info){
-        testInfo = info;
+    static void init(TestInfo info) {
+        //Arrange
         weatherMethods = new OpenWeatherMethods();
-        System.out.println("Running Test: "+ testInfo.getDisplayName());
     }
 
     @ParameterizedTest
     @MethodSource
     @DisplayName("Weather By ID Has Correct Name")
-    void currentWeatherByID(int input,String expected) {
+    void currentWeatherByID(int input, String expected) {
+        //Act
         JSONObject response = new JSONObject(weatherMethods.currentWeatherByID(input).getBody().asString());
-        System.out.println("Testing ID: "+ input);
-        assertEquals(input,response.get("id"),"For ID: "+input);
-        assertEquals(expected,response.get("name"),"For ID: "+input);
+        //Assert
+        assertEquals(input, response.get("id"), "For ID: " + input);
+        assertEquals(expected, response.get("name"), "For ID: " + input);
     }
-    private static Stream<Arguments> currentWeatherByID(){
+
+    private static Stream<Arguments> currentWeatherByID() {
         return Stream.of(
                 Arguments.of(593116, "Vilnius"),
                 Arguments.of(756135, "Warsaw"),

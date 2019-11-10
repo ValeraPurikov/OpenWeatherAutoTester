@@ -13,26 +13,26 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class WeatherByNameHasCorrectTimeZone {
     static OpenWeatherMethods weatherMethods;
-    static TestInfo testInfo;
 
     @BeforeAll
-    static void init(TestInfo info){
-        testInfo = info;
+    static void init(TestInfo info) {
+        //Arrange
         weatherMethods = new OpenWeatherMethods();
-        System.out.println("Running Test: "+ testInfo.getDisplayName());
     }
 
     @ParameterizedTest
     @MethodSource
     @DisplayName("Weather By Name Has Correct Time Zone")
     void currentWeatherByName(int expected, String input) {
+        //Act
         JSONObject response = new JSONObject(weatherMethods.currentWeatherByName(input).getBody().asString());
-        System.out.println("Testing City: "+ input);
+        //Assert
         assertTrue(response.has("timezone"), "Response has no timezone!");
-        assertEquals(input,response.get("name"),"For City: "+input);
-        assertEquals(expected,response.get("timezone"),"For City: "+input);
+        assertEquals(input, response.get("name"), "For City: " + input);
+        assertEquals(expected, response.get("timezone"), "For City: " + input);
     }
-    private static Stream<Arguments> currentWeatherByName(){
+
+    private static Stream<Arguments> currentWeatherByName() {
         return Stream.of(
                 Arguments.of(7200, "Vilnius"),
                 Arguments.of(3600, "Warsaw"),

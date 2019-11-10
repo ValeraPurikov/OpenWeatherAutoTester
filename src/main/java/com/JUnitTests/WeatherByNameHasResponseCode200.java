@@ -13,13 +13,11 @@ import static org.junit.jupiter.api.Assertions.*;
 public class WeatherByNameHasResponseCode200 {
 
     static OpenWeatherMethods weatherMethods;
-    static TestInfo testInfo;
 
     @BeforeAll
-    static void init(TestInfo info){
-        testInfo = info;
+    static void init(TestInfo info) {
+        //Arrange
         weatherMethods = new OpenWeatherMethods();
-        System.out.println("Running Test: "+ testInfo.getDisplayName());
     }
 
 
@@ -27,12 +25,14 @@ public class WeatherByNameHasResponseCode200 {
     @MethodSource
     @DisplayName("Weather By Name Has Response Code 200")
     void currentWeatherByName(String input) {
+        //Act
         JSONObject response = new JSONObject(weatherMethods.currentWeatherByName(input).getBody().asString());
-        System.out.println("Testing City: "+ input);
-        assertEquals(input,response.get("name"),"For City: "+input);
-        assertEquals(200,response.get("cod"),"For City: "+input);
+        //Assert
+        assertEquals(input, response.get("name"), "For City: " + input);
+        assertEquals(200, response.get("cod"), "For City: " + input);
     }
-    private static ArrayList<String> currentWeatherByName(){
+
+    private static ArrayList<String> currentWeatherByName() {
         ArrayList<String> returnList = new ArrayList<>();
         returnList.add("Vilnius");
         returnList.add("Warsaw");

@@ -7,7 +7,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import java.util.ArrayList;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -15,28 +14,27 @@ import static org.junit.jupiter.api.Assertions.*;
 public class WeatherByCoordsHasResponseCode200 {
 
     static OpenWeatherMethods weatherMethods;
-    static TestInfo testInfo;
 
     @BeforeAll
-    static void init(TestInfo info){
-        testInfo = info;
+    static void init(TestInfo info) {
+        //Arrange
         weatherMethods = new OpenWeatherMethods();
-        System.out.println("Running Test: "+ testInfo.getDisplayName());
     }
 
     @ParameterizedTest
     @MethodSource
     @DisplayName("Weather By Coords Has Response Code 200")
     void currentWeatherByCoords(int lon, int lat) {
-        JSONObject response = new JSONObject(weatherMethods.currentWeatherByCoords(lon,lat).getBody().asString());
-        System.out.println("Testing Coords: "+ lon+":"+lat);
+        //Act
+        JSONObject response = new JSONObject(weatherMethods.currentWeatherByCoords(lon, lat).getBody().asString());
+        //Assert
         assertTrue(response.has("coord"), "Response Has No Coords!");
-        JSONObject temp = response.getJSONObject("coord");
-        assertEquals(lon,response.getJSONObject("coord").get("lon"),"For Cords: "+ lon+":"+lat);
-        assertEquals(lat,response.getJSONObject("coord").get("lat"),"For Cords: "+ lon+":"+lat);
-        assertEquals(200, response.get("cod"),"For Coords: "+ lon+":"+lat);
+        assertEquals(lon, response.getJSONObject("coord").get("lon"), "For Cords: " + lon + ":" + lat);
+        assertEquals(lat, response.getJSONObject("coord").get("lat"), "For Cords: " + lon + ":" + lat);
+        assertEquals(200, response.get("cod"), "For Coords: " + lon + ":" + lat);
     }
-    private static Stream<Arguments> currentWeatherByCoords(){
+
+    private static Stream<Arguments> currentWeatherByCoords() {
         return Stream.of(
                 Arguments.of(1, 1),
                 Arguments.of(5, 5),

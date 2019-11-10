@@ -13,28 +13,27 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class WeatherByIDHasCorrectCountry {
     static OpenWeatherMethods weatherMethods;
-    static TestInfo testInfo;
 
     @BeforeAll
-    static void init(TestInfo info){
-        testInfo = info;
+    static void init(TestInfo info) {
+        //Arrange
         weatherMethods = new OpenWeatherMethods();
-        System.out.println("Running Test: "+ testInfo.getDisplayName());
     }
 
     @ParameterizedTest
     @MethodSource
     @DisplayName("Weather By ID Has Correct Country")
-    void currentWeatherByID(String expected,int input) {
+    void currentWeatherByID(String expected, int input) {
+        //Act
         JSONObject response = new JSONObject(weatherMethods.currentWeatherByID(input).getBody().asString());
-        System.out.println("Testing ID: "+ input);
+        //Assert
         assertTrue(response.has("sys"), "Response has no sys key!");
-        JSONObject temp = response.getJSONObject("sys");
-        assertTrue(temp.has("country"), "Response has no country key!");
-        assertEquals(input,response.get("id"),"For ID: "+input);
-        assertEquals(expected,response.getJSONObject("sys").get("country"),"For ID: "+input);
+        assertTrue(response.getJSONObject("sys").has("country"), "Response has no country key!");
+        assertEquals(input, response.get("id"), "For ID: " + input);
+        assertEquals(expected, response.getJSONObject("sys").get("country"), "For ID: " + input);
     }
-    private static Stream<Arguments> currentWeatherByID(){
+
+    private static Stream<Arguments> currentWeatherByID() {
         return Stream.of(
                 Arguments.of("LT", 593116),
                 Arguments.of("PL", 756135),

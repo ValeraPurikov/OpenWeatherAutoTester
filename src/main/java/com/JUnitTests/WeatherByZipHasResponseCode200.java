@@ -13,24 +13,24 @@ import static org.junit.jupiter.api.Assertions.*;
 public class WeatherByZipHasResponseCode200 {
 
     static OpenWeatherMethods weatherMethods;
-    static TestInfo testInfo;
 
     @BeforeAll
-    static void init(TestInfo info){
-        testInfo = info;
+    static void init(TestInfo info) {
+        //Arrange
         weatherMethods = new OpenWeatherMethods();
-        System.out.println("Running Test: "+ testInfo.getDisplayName());
     }
 
     @ParameterizedTest
     @MethodSource
     @DisplayName("Weather By Zip Has Response Code 200")
     void currentWeatherByZip(int input) {
+        //Act
         JSONObject response = new JSONObject(weatherMethods.currentWeatherByZip(input).getBody().asString());
-        System.out.println("Testing Zip: "+ input);
-        assertEquals(200,response.get("cod"),"For Zip: "+input);
+        //Assert
+        assertEquals(200, response.get("cod"), "For Zip: " + input);
     }
-    private static ArrayList<Integer> currentWeatherByZip(){
+
+    private static ArrayList<Integer> currentWeatherByZip() {
         ArrayList<Integer> returnList = new ArrayList<>();
         returnList.add(17123);
         returnList.add(11233);
