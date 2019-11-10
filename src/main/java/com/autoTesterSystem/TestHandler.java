@@ -44,7 +44,7 @@ public class TestHandler {
                     failures.add(originalString);
                     for (TestExecutionSummary.Failure f : summary.getFailures()) {
                         //Generate explanation for each parameter-set failed within a test
-                        System.out.print("Failed Test: \"" + originalString + "\". Reason - " +
+                        System.out.println("Failed Test: \"" + originalString + "\". Reason - " +
                                 f.getException().getMessage());
                     }
                 }
