@@ -12,4 +12,4 @@ In order to launch a test from the UI, click on the desired test from the list o
 
 ## Note
 
-SSome tests report a failure. It appears that Rome and Marino share the same City ID, and when searching cities by ID and then by Name, different coordinates are returned. It appears to be a bug within the OpenWeatherMap API, but might be "by design".
+Some tests report a failure. It appears that Rome and Marino share the same City ID, and when searching cities by ID and then by Name, different coordinates are returned. It appears to be a bug within the OpenWeatherMap API, but might be "by design".
